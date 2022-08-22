@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  min-width: 280px;
+  min-height: 450px;
+  font-size: 12px;
+}
+h1, h2, h3, hr {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul {
+  padding-left: 0;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.card {
+  margin: 5px ;
+  width: 350px;
+  border-radius: 15px;
+  border: 1px solid blue;
+  transition: transform 200ms ease;
+  overflow: hidden;
+  background-image: linear-gradient(rgb(225, 239, 196), rgb(196, 218, 153),rgb(123, 126, 116));
+}
+.card__title{
+  text-align: left;
+}
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 200ms ease;
+}
+.card__list__title{
+  text-align: center;  
+  border-bottom: 1px solid blue;
+  border-radius: 10%;
+  font-size: 1.3rem;
+}
+.card__list__email,
+.card__list__birthday,
+.card__list__password
+ {
+  display: flex;
+  color: rgba(1, 2, 69, 0.8);
+  margin: 10px;
+  /* font-size: 1.2rem; */
+}
+.card__span {
+  color: black;
+  transform: translateX(-10px);
+}
+.card__footer {
+  justify-content: flex-end;
+  display: flex;
+  gap: 10px; 
+  margin: 10px;
+}
+.card__btn {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.card__btn:nth-child(1){
+  background-color: brown;
+  color: white;
+}
+.card__btn:nth-child(2){
+  background-color: goldenrod;
+  color: white;
+}
+.App__title{
+  margin: 0;
+  background-image: linear-gradient(rgb(61, 120, 128),white,rgb(61, 120, 128));
+}
